@@ -3,7 +3,7 @@
 #  BATCH......: ESR.sh
 #  Descricao: Contador de tempo dos cursos da AlgaWorks
 #  Criado por.: Patrick Farias 30/12/2020
-#  https://github.com/patrickfarias/ShellScript/ContadorAlgaWorks/
+#  https://github.com/patrickfarias/ShellScript/tree/main/ContadorAlgaWorks
 ######################################################################
 # 				Historico:
 #
