@@ -1,0 +1,21 @@
+Conhecendo o Docker
+Instalando o Docker
+Executando um container
+Gerenciando melhor os containers
+Conhecendo a arquitetura do Docker
+Entendendo o que são as imagens e o Docker Hub
+Gerenciando imagens
+Executando um container do MySQL
+Construindo a imagem da aplicação com Dockerfile
+Criando uma network e conectando dois containers
+Construindo a imagem Docker pelo Maven
+Disponibilizando a imagem da aplicação no Docker Hub
+Conhecendo e usando Docker Compose
+Controlando a ordem de inicialização com wait-for-it.sh
+Escalando um serviço com Docker Compose
+Entendendo o Poor Man&#39;s Load Balancer (DNS Round Robin)
+Configurando um proxy reverso com Nginx
+Entendendo o problema da HTTP Session no Authorization Server
+Adicionando um container do Redis no arquivo do Docker Compose
+Configurando o Spring Session Data Redis
+Resolvendo problemas com storage de Authorization Codes
