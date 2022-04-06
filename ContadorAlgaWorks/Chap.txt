@@ -1,21 +1,29 @@
-Conhecendo o Docker
-Instalando o Docker
-Executando um container
-Gerenciando melhor os containers
-Conhecendo a arquitetura do Docker
-Entendendo o que são as imagens e o Docker Hub
-Gerenciando imagens
-Executando um container do MySQL
-Construindo a imagem da aplicação com Dockerfile
-Criando uma network e conectando dois containers
-Construindo a imagem Docker pelo Maven
-Disponibilizando a imagem da aplicação no Docker Hub
-Conhecendo e usando Docker Compose
-Controlando a ordem de inicialização com wait-for-it.sh
-Escalando um serviço com Docker Compose
-Entendendo o Poor Man&#39;s Load Balancer (DNS Round Robin)
-Configurando um proxy reverso com Nginx
-Entendendo o problema da HTTP Session no Authorization Server
-Adicionando um container do Redis no arquivo do Docker Compose
-Configurando o Spring Session Data Redis
-Resolvendo problemas com storage de Authorization Codes
+Introdução ao deployment em produção
+Mais organização das propriedades do projeto com Spring Profiles
+Dependência de JavaMailSender não satisfeita: melhorando o uso da herança
+Conhecendo a Amazon Web Services (AWS)
+Entendendo alguns conceitos fundamentais da nuvem da AWS
+Monitorando e criando um alerta de orçamento da AWS
+Criando o bucket no Amazon S3
+Criando uma instância do MySQL no Amazon RDS
+Criando schema e usuário da aplicação
+Conhecendo e criando uma conta no Redislabs
+Criando uma instância do Redis na nuvem
+Conhecendo o Amazon Elastic Container Service (ECS) e AWS Fargate
+Publicando um container no Amazon ECS
+Subindo a imagem Docker para o Amazon Elastic Container Registry (ECR)
+Organizando as variáveis de ambiente do container da aplicação
+Gerenciando as configurações com AWS Systems Manager Parameter Store
+Configurando Amazon ECS para rodar nossa aplicação
+Permitindo a leitura de parâmetros do Parameter Store pelo serviço do Amazon ECS
+Permitindo o acesso ao MySQL pelo Security Group do serviço do Amazon ECS
+Inserindo dados no banco de dados de produção
+Conhecendo o Elastic Load Balancing da Amazon
+Configurando e provisionando um Load Balancer na Amazon
+Configurando o balanceamento de carga no serviço do Amazon ECS
+Registrando um domínio de internet no Registro.br
+Configurando o domínio para o Application Load Balancer
+Configurando certificado TLS (HTTPS) com AWS Certificate Manager
+Configurando o protocolo HTTPS nos links da API com HATEOAS
+Testando a API em produção
+Conclusão e próximos passos
