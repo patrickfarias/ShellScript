@@ -1,29 +1,27 @@
-Introdução ao deployment em produção
-Mais organização das propriedades do projeto com Spring Profiles
-Dependência de JavaMailSender não satisfeita: melhorando o uso da herança
-Conhecendo a Amazon Web Services (AWS)
-Entendendo alguns conceitos fundamentais da nuvem da AWS
-Monitorando e criando um alerta de orçamento da AWS
-Criando o bucket no Amazon S3
-Criando uma instância do MySQL no Amazon RDS
-Criando schema e usuário da aplicação
-Conhecendo e criando uma conta no Redislabs
-Criando uma instância do Redis na nuvem
-Conhecendo o Amazon Elastic Container Service (ECS) e AWS Fargate
-Publicando um container no Amazon ECS
-Subindo a imagem Docker para o Amazon Elastic Container Registry (ECR)
-Organizando as variáveis de ambiente do container da aplicação
-Gerenciando as configurações com AWS Systems Manager Parameter Store
-Configurando Amazon ECS para rodar nossa aplicação
-Permitindo a leitura de parâmetros do Parameter Store pelo serviço do Amazon ECS
-Permitindo o acesso ao MySQL pelo Security Group do serviço do Amazon ECS
-Inserindo dados no banco de dados de produção
-Conhecendo o Elastic Load Balancing da Amazon
-Configurando e provisionando um Load Balancer na Amazon
-Configurando o balanceamento de carga no serviço do Amazon ECS
-Registrando um domínio de internet no Registro.br
-Configurando o domínio para o Application Load Balancer
-Configurando certificado TLS (HTTPS) com AWS Certificate Manager
-Configurando o protocolo HTTPS nos links da API com HATEOAS
-Testando a API em produção
-Conclusão e próximos passos
+Introdução à segurança de REST APIs
+Adicionando segurança na API com Spring Security
+Configurando Spring Security com HTTP Basic
+Configurando autenticação de usuários em memória
+Introdução ao OAuth2
+Soluções para OAuth2: nova stack do Spring Security vs Spring Security OAuth
+Conhecendo o fluxo Resource Owner Password Credentials
+Criando o projeto do Authorization Server com Spring Security OAuth2
+Configurando o fluxo Authorization Server com Password Credentials e Opaque Tokens
+Configurando o endpoint de introspecção de tokens no Authorization Server
+Configurando o Resource Server com a nova stack do Spring Security
+Conhecendo o fluxo para emitir e usar Refresh Tokens
+Configurando o Refresh Token Grant Type no Authorization Server
+Configurando a validade e não reutilização de Refresh Tokens
+Conhecendo o fluxo Client Credentials
+Configurando o Client Credentials Grant Type no Authorization Server
+Revisando o fluxo Authorization Code
+Configurando o Authorization Code Grant Type
+Testando o fluxo Authorization Code com um client JavaScript
+Conhecendo o fluxo Implicit
+Configurando o fluxo Implicit Grant Type
+Mais segurança com PKCE e Authorization Code Grant
+Implementando o suporte a PKCE com o fluxo Authorization Code
+Testando o fluxo Authorization Code com PKCE com o método plain
+Testando o fluxo Authorization Code com PKCE com o método SHA-256
+Testando um client JavaScript com PKCE e Authorization Code
+Decidindo qual fluxo OAuth2 usar
