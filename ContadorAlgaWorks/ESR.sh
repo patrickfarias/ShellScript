@@ -13,7 +13,7 @@
 # CONFIGURACAO#
 ######################
 NOME_ARQUIVO_SHELL="$0"
-NOME_ARQUIVO_FONTE="Fonte_Angular.html"
+NOME_ARQUIVO_FONTE="Fonte.html"
 ######################
 
 
@@ -31,17 +31,17 @@ grep "c-course-curriculum__lesson-duration" $NOME_ARQUIVO_FONTE | cut -d '>' -f2
 
 
 ###################### MODULOS DO CURSO ######################
-echo "---------- MODULOS: ----------"
+#echo "---------- MODULOS: ----------"
 #grep "chapter-name" $NOME_ARQUIVO_FONTE | cut -d '>' -f2 | cut -d '<' -f1 > Chap.txt
 #grep "c-course-curriculum__" $NOME_ARQUIVO_FONTE | cut -d '>' -f2 | cut -d '<' -f1 > Chap.txt
-grep "c-course-curriculum__lesson-name" $NOME_ARQUIVO_FONTE | cut -d '>' -f2 | cut -d '<' -f1 > Chap.txt
+#grep "c-course-curriculum__lesson-name" $NOME_ARQUIVO_FONTE | cut -d '>' -f2 | cut -d '<' -f1 > Chap.txt
 
 
 #<h3   class="c-course-curriculum__chapter-name">
 #<span class="c-course-curriculum__lesson-name">
 
-cat Chap.txt
-echo
+#cat Chap.txt
+#echo
 
 FILE=a1.txt
 
@@ -113,9 +113,4 @@ echo "Tem o tempo de: [ \033[31m $horasConvertidos:$modMinutosConvertidos:$modSe
 
 echo "######################################################################################"
 
-echo
-echo 
-echo "Abaixo area de testes --------------  Novo Desenvolvimento"
-echo
-echo	
 
