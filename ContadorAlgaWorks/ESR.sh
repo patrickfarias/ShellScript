@@ -13,7 +13,7 @@
 # CONFIGURACAO#
 ######################
 NOME_ARQUIVO_SHELL="$0"
-NOME_ARQUIVO_FONTE="Fonte.html"
+NOME_ARQUIVO_FONTE="Fonte_Angular.html"
 ######################
 
 
@@ -118,77 +118,4 @@ echo
 echo "Abaixo area de testes --------------  Novo Desenvolvimento"
 echo
 echo	
-
-#grep "c-course-curriculum" $NOME_ARQUIVO_FONTE > ax.txt #| cut -d '>' -f2 | cut -d '<' -f1 > a1.txt
-#cat ax.txt
-
-#grep "c-course-curriculum__chapter-container" ax.txt > lixo.txt #| cut -d '>' -f2 | cut -d '<' -f1 > a1.txt
-
-
-CAPITULO_NUMERO="chapter.txt"
-
-#grep "h3 class" $NOME_ARQUIVO_FONTE  | cut -d '>' -f2 | cut -d '<' -f1 > $CAPITULO_NUMERO
-#cat chapter.txt
-
-
-
-
-capitulo=0
-
-
-	arquivo=ax.txt
-
-
-	while IFS= read -r linha; do
-	#	sleep .5
-
-	#TEMP=$(
-#	grep "<h3 class=" $linha | cut -d '<' -f2 | cut -d '=' -f1 >> bla.txt
-
-	#cut -d '<' -f2 <<< $linha  | cut -d '=' -f1   >> bla.txt
-	#cat bla.txt
-
-	if [ $bla.txt = "h3 class" ]; then
-		capitulo=$(($capitulo + 1))
-	fi
-	
-rm -rf bla.txt
-
-
-exit
-  #  echo $TEMP
-done < "$arquivo"
-
-#cat bla.txt
-
-#while read -r linha; do
-
-	
- #echo $(grep "h3" $linha)
-
-	#temp= cut -d 'h3' -f1 $linha
-	
-	#echo $(grep "h3" $linha ) # | cut -d '<' -f2 ) #| cut -d '=' -f1)
-
-
-#	TEMP=$(cut 'h3' <<< $linha) #  | sed 's/s//' | cut -c 2- >> segundos.txt
-
-#	echo $linha
-
-
-#	temp=$(grep "h3" $linha ) # | cut -d '<' -f2 ) #| cut -d '=' -f1)
-		
-	#echo $temp
-	#echo $linha	
-
-#	if [ "$temp" = "h3 class" ]; then
-#		capitulo=$(($capitulo + 1))
-#	fi
-#echo 
-
-
- #  echo "$linha"
-#done < "ax.txt"
-
-#echo $capitulo
 
