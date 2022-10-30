@@ -1,9 +1,15 @@
 # Contador de Tempo das Vídeo Aulas.
-> Curso ESR - Especialista Sping Rest (AlgaWorks)
+> Curso ESR - Especialista Spring Rest (AlgaWorks) </br> [https://www.algaworks.com](https://www.algaworks.com)
 
 ## Descrição do Projeto:
 
+Esse projeto tem por objetivo de forma didática utilizar o Shell Script para realizar um calculo de unidade de tempo e conversão em horas.</br>
+Problema: A plataforma da AlgaWorks informa o tempo de cada aula individual de um determinado curso. Porém eu gostaria de saber o tempo total de todas as aulas de um determinado curso.</br>
 
+![](screenshot_002.png)
+Pegamos como exemplo o curso ESR - Especialista Spring Rest)</br>
+Quantas horas em esse treinamento?
+A plataforma não informa. Mas a partir de agora nós podemos ficar sabendo.
 
 ## Forma de Cálculo:
 Esse script foi feito de forma didática, para facilitar o entendimento. 
@@ -29,6 +35,7 @@ Para utilizar o script, basta ter o bash instado em sua máquina.
 Para SO Mac/Linux o Bash já vem instalado e pode ser utilizado pelo terminal.
 Caso seja usuário da Sistema Windows, Se desejar, instale o bash conforme orientação disponível no blog da Microsoft: https://learn.microsoft.com/pt-br/windows/wsl/install
 
+Após o terminal estar devidamente configurado.
 Estando no diretório _./ShellScript/ContadorAlgaWorks_, basta rodar o seguinte comando:
 
 ```
@@ -58,6 +65,9 @@ sh ESR.sh -v ou sh ESR.sh --version // Mostra a versao.
 </br>
 
 ## Será que funciona?
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
+
+## Será que funciona?
 
 Para validar se o script está realmente funcional.
 
@@ -77,7 +87,7 @@ O Resultado final deve dar 1 minuto e 2 segundo a menos no total informado no re
 
 Brinque com outros valores e comprove.
 
-> ATENCAO: Esse recurso vale para outros cursos da AlgaWorks, se for aluno, basta entrar na pagina do seu curso com o seu usuario e senha, e copiar o fonte da pagina do curso que vc quiser calcular o tempo e colar no arquivo ./Fonte.html e rodar o script, que ele vai calcular o tempo total do curso.
+> ATENCAO: Esse recurso vale para outros cursos da AlgaWorks, se for aluno, basta entrar na pagina do seu curso com o seu usuario e senha, e copiar o fonte da pagina do curso que vc quiser calcular o tempo e colar no arquivo ./Fonte.html e rodar o script, que ele vai calcular o tempo total do curso. </br> Nao esqueça de salvar o arquivo.
 
 
 
