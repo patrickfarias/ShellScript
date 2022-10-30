@@ -9,7 +9,7 @@ Problema: A plataforma da AlgaWorks informa o tempo de cada aula individual de u
 ![](screenshot_002.png)
 Pegamos como exemplo o curso ESR - Especialista Spring Rest)</br>
 Quantas horas em esse treinamento?
-A plataforma não informa. Mas a partir de agora nós podemos ficar sabendo.
+A plataforma não informa. Mas a partir de agora nós podemos ficar sabendo, através dessa nossa nova ferramenta.
 
 ## Forma de Cálculo:
 Esse script foi feito de forma didática, para facilitar o entendimento. 
@@ -24,7 +24,6 @@ Mas basicamente ele faz o seguinte:
 </br> 7 - Soma o resultado do item 6 com minutos do item 3.
 </br> 8 - Converte a soma do item 7 em horas.
 </br> 9 - Agora vc ja tem as horas, os minutos e os segundos que restaram da conversão do item 6.
-
 
 ## Exemplo de Uso:
 
@@ -43,14 +42,11 @@ sh ESR.sh
 ```
 ![](screenshot_001.png)
 
-
-
 Lembrando que: Temos tambem a possibilidade de passar parâmetros:
 ```
 sh ESR.sh -p ou sh ESR.sh --print   // Mostra a Grade inteira do Curso(Titulo das Video Aulas).
 ```
 ![](screenshot_004.png)
-
 
 
 ```
@@ -64,8 +60,6 @@ sh ESR.sh -v ou sh ESR.sh --version // Mostra a versao.
 ![](screenshot_003.png)
 </br>
 
-## Será que funciona?
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
 
 ## Será que funciona?
 
