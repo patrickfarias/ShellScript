@@ -60,6 +60,8 @@ sh ESR.sh -v ou sh ESR.sh --version // Mostra a versao.
 ![](screenshot_003.png)
 </br>
 
+## Vídeo com uma demostracao:
+[![Watch the video](screenshot_007.png)](https://youtu.be/jQmW7rM6xNo)
 
 ## Será que funciona?
 
