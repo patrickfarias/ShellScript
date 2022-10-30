@@ -2,18 +2,34 @@
 ######################################################################
 #  BATCH......: ESR.sh
 #  Descricao: Contador de tempo dos cursos da AlgaWorks
-#  Criado por.: Patrick Farias 30/12/2020
-#  https://github.com/patrickfarias/ShellScript/tree/main/ContadorAlgaWorks
+#  Autor: Patrick Farias 30/12/2020
+#  Manutencao: patrickfarias@icloud.com
+#  Repo: https://github.com/patrickfarias/ShellScript/tree/main/ContadorAlgaWorks
+##############################################################################################
+
+
 ######################################################################
 # 				Historico:
 #
 #    v1.0 2020-12-30, Patrick - versao Inicial
 ######################################################################
 
+
+##############################################################################################
+# 				Historico:
+#
+# Versao: 1.0 2020-12-30, Patrick - versao Inicial
+# Versao: 1.1 2022-10-27, Patrick - Add parametros: [-h | --help] [-v | --version]
+#
+##############################################################################################
+
 # CONFIGURACAO#
 ######################
 NOME_ARQUIVO_SHELL="$0"
+PARAM_01="$1"
 NOME_ARQUIVO_FONTE="Fonte.html"
+
+VERSAO=$(grep -n "^# Versao:" $0 | tail -1 | cut -d ' ' -f3)
 ######################
 
 
@@ -23,37 +39,81 @@ rm -rf a1.txt
 rm -rf minutos.txt
 rm -rf segundos.txt
 ######################
-
+clear
 ###################### EXTRACAO DE DADOS ######################
 CURSO1=$(grep "l-course-headline__title" $NOME_ARQUIVO_FONTE | cut -d '>' -f2 | cut -d '<' -f1)
 grep "c-course-curriculum__lesson-duration" $NOME_ARQUIVO_FONTE | cut -d '>' -f2 | cut -d '<' -f1 > a1.txt
 ######################
 
+USO="Uso: $(basename "$0") [-h | --help] [-v | --version] | [- | --print]"
+
+MENSAGEM="$USO
+
+-h, --help		Mostra a tela de Ajuda.
+-v, --version 		Mostra a versao.
+-p, --print             Mostra a Grade inteira do Curso(Titulo das Video Aulas).
+
+"
 
 ###################### MODULOS DO CURSO ######################
-#echo "---------- MODULOS: ----------"
-#grep "chapter-name" $NOME_ARQUIVO_FONTE | cut -d '>' -f2 | cut -d '<' -f1 > Chap.txt
-#grep "c-course-curriculum__" $NOME_ARQUIVO_FONTE | cut -d '>' -f2 | cut -d '<' -f1 > Chap.txt
-#grep "c-course-curriculum__lesson-name" $NOME_ARQUIVO_FONTE | cut -d '>' -f2 | cut -d '<' -f1 > Chap.txt
+grep "chapter-name" $NOME_ARQUIVO_FONTE | cut -d '>' -f2 | cut -d '<' -f1 > Chap.txt
+grep "c-course-curriculum__" $NOME_ARQUIVO_FONTE | cut -d '>' -f2 | cut -d '<' -f1 > Chap.txt
+grep "c-course-curriculum__lesson-name" $NOME_ARQUIVO_FONTE | cut -d '>' -f2 | cut -d '<' -f1 > Chap.txt
 
+# Tratamento das opcoes de linha de comando
+while test -n "$1"
+do
+	case "$1" in
+	
+	-h | --help)
+		echo "$MENSAGEM"
+		exit 0
+		;;
+		
+	-v | --version)
+		echo "ESR version: $VERSAO"		
+		echo
+		echo
+		;;
 
-#<h3   class="c-course-curriculum__chapter-name">
-#<span class="c-course-curriculum__lesson-name">
+	-p | --print)
+		echo "---------- MODULOS: ----------"
+		echo 
+		echo "Segue abaixo o Titulo das Video aulas"
+		echo
+		cat Chap.txt		
+		echo
+		echo
+		;;
+		
+	*)
+		
+		if test -n "$1"; then
+			echo "Opcao Invalida: $1"
+			echo "Tente uma das seguintes opcoes: "
+			echo "$USO"
+			echo
+			echo "Ou tente novamente com esses parametros"
+			echo "$PARAM"
+			exit 1
+		fi
+		
+	esac
+	
+	shift
+	
+done
 
-#cat Chap.txt
-#echo
+echo "---------- AGARDE UM MOMENTO, estamos gerando o relatorio: ----------"
 
 FILE=a1.txt
 
-# Verifica se o arquivo existe 
 if [ -f ${arquivo} ]
 then
 
 	while read linha; do
 	# 22m 51s
-	# Pega os minutos 
 	cut -d 'm' -f1 <<< $linha >> minutos.txt
-	#Pega os segundos
 	cut -d 'm' -f2 <<< $linha | sed 's/s//' | cut -c 2- >> segundos.txt
 
 	done < "$FILE"

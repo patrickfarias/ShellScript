@@ -10,7 +10,7 @@ No diretorio _ContadorAlgaWorks_, basta digitar:
 ```sh
 sh ESR.sh
 ```
-![](screenshot.png)
+![](screenshot_001.png)
 
 ## Histórico de Releases:
 * 1.1
