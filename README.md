@@ -14,8 +14,9 @@ sh ESR.sh
 
 ## Histórico de Releases:
 * 1.1
-    * Melhorias
-    * 2022-10-25 - Patrick Farias
+    * 2022-10-30 - Patrick Farias
+    * Adicionado Add parametros: [-h | --help] [-v | --version]  [-p | --print]
+   
 * 1.0
     * Start (2020-12-30)
 
