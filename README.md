@@ -1,20 +1,65 @@
-# Contador de Tempo das Video Aulas.
+# Contador de Tempo das Vídeo Aulas.
 > Curso ESR - Especialista Sping Rest (AlgaWorks)
+
+## Descrição do Projeto:
+
+
+
+## Forma de Cálculo:
+Esse script foi feito de forma didática, para facilitar o entendimento. 
+
+Mas basicamente ele faz o seguinte:
+</br> 1 - Pega o arquivo Fonte.html e separa as linhas que contem as referencias as aulas com os tempos [ <code>"c-course-curriculum__lesson-duration">24m 57s</code> ] e salva em um novo arquivo. Exemplo: linhas que contem informações nesse formato: 5m 22s, 12m 38s (Se tiver 200 aulas, teremos 200 referencias)
+</br> 2 - Separa em um arquivo os minutos, um cada linha( uma linha com o 5, outra com o 12, e faz isso com todas as linhas do item 1)
+</br> 3 - Soma as quantidades informadas dos minutos em cada linha do item 2 (Aqui ele usa a calculadora do Shell, ele faz uma mágica)
+</br> 4 - Separa em um arquivo os segundos, um cada linha( uma linha com o 22, outra com o 38, e faz isso com todas as linhas do item 1)
+</br> 5 - Soma as quantidades informadas dos segundos em cada linha do item 4 (Aqui ele usa a calculadora do Shell de novo)
+</br> 6 - Converte a soma dos segundos em minutos.(vai sobrar alguns segundos dessa conversao)
+</br> 7 - Soma o resultado do item 6 com minutos do item 3.
+</br> 8 - Converte a soma do item 7 em horas.
+</br> 9 - Agora vc ja tem as horas, os minutos e os segundos que restaram da conversão do item 6.
+
 
 ## Exemplo de Uso:
 
+Faça o clone:
+> git clone https://github.com/patrickfarias/ShellScript.git
+
 Para utilizar o script, basta ter o bash instado em sua máquina.
+Para SO Mac/Linux o Bash já vem instalado e pode ser utilizado pelo terminal.
+Caso seja usuário da Sistema Windows, Se desejar, instale o bash conforme orientação disponível no blog da Microsoft: https://learn.microsoft.com/pt-br/windows/wsl/install
 
-No diretorio _ContadorAlgaWorks_, basta digitar:
+Estando no diretório _./ShellScript/ContadorAlgaWorks_, basta rodar o seguinte comando:
 
-```sh
+```
 sh ESR.sh
 ```
 ![](screenshot_001.png)
 
+
+
+Lembrando que: Temos tambem a possibilidade de passar parâmetros:
+```
+sh ESR.sh -p ou sh ESR.sh --print   // Mostra a Grade inteira do Curso(Titulo das Video Aulas).
+```
+![](screenshot_004.png)
+
+
+
+```
+sh ESR.sh -h ou sh ESR.sh --help    // Mostra a tela de Ajuda.
+```
+![](screenshot_005.png)
+```
+sh ESR.sh -v ou sh ESR.sh --version // Mostra a versao.
+```
+
+![](screenshot_003.png)
+</br>
+
 ## Será que funciona?
 
-Para validar se o escript esta realmente funcional.
+Para validar se o script está realmente funcional.
 
 Entre dentro do arquivo _./ShellScript/ContadorAlgaWorks/Fonte.html_ e altere algum campo com com esse formato
 e altere por exemplo uma linha como essa:

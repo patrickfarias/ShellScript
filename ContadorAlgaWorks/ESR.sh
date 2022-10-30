@@ -39,13 +39,12 @@ rm -rf a1.txt
 rm -rf minutos.txt
 rm -rf segundos.txt
 ######################
-clear
 ###################### EXTRACAO DE DADOS ######################
 CURSO1=$(grep "l-course-headline__title" $NOME_ARQUIVO_FONTE | cut -d '>' -f2 | cut -d '<' -f1)
 grep "c-course-curriculum__lesson-duration" $NOME_ARQUIVO_FONTE | cut -d '>' -f2 | cut -d '<' -f1 > a1.txt
 ######################
 
-USO="Uso: $(basename "$0") [-h | --help] [-v | --version] | [- | --print]"
+USO="Uso: $(basename "$0") [-h | --help] [-v | --version] | [-p | --print]"
 
 MENSAGEM="$USO
 
@@ -71,9 +70,8 @@ do
 		;;
 		
 	-v | --version)
-		echo "ESR version: $VERSAO"		
-		echo
-		echo
+		echo "ESR version: $VERSAO"
+		exit 0
 		;;
 
 	-p | --print)
@@ -103,8 +101,8 @@ do
 	shift
 	
 done
-
-echo "---------- AGARDE UM MOMENTO, estamos gerando o relatorio: ----------"
+clear
+echo "---------- AGARDE UM MOMENTO, estamos gerando o relatório: ----------"
 
 FILE=a1.txt
 
